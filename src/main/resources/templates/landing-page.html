@@ -14,16 +14,23 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+
+
+
 </head>
 <body>
 	<div align="center">
 		<h2>Highchart 1</h2>
 	</div>
-	<figure class="highcharts-figure">
-		<div id="container-bar"></div>
-	</figure>
+	<div id="container-bar"></div>
 	<script type="text/javascript">
-		$(document).ready(
+	$(document).ready(
 				function() {
 					$.ajax({
 						url : "/get-data",
